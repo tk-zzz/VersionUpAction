@@ -9,7 +9,7 @@ on:
         default: 'デフォルト値'
 
 jobs:
-  update version code:
+  update_version_code:
     runs-on: ubuntu-latest
     steps:
       - name: update gradle task
