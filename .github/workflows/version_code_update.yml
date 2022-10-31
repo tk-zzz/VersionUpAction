@@ -17,5 +17,9 @@ jobs:
 #        uses: gradle/gradle-build-action@v2
       - name: update gradle task
         run: |
+          git checkout -b update/version_code
+          git branch
           ./gradlew incrementVersionCode
           cat ./project.version
+          git commit -m "update version code"
+          git log
