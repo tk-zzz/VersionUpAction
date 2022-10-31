@@ -12,5 +12,7 @@ jobs:
   update_version_code:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
       - name: update gradle task
         run: ./gradlew incrementVersionCode
