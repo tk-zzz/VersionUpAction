@@ -1,0 +1,6 @@
+ext {
+	releaseVersionCode = 506
+	releaseVersionName = "7.17.0"
+	developVersionCode = releaseVersionCode
+	developVersionName = releaseVersionName
+}
