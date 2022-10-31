@@ -18,4 +18,4 @@ jobs:
       - name: update gradle task
         run: |
           ./gradlew incrementVersionCode
-          echo ./project.version
+          cat ./project.version
