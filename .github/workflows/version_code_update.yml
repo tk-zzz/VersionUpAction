@@ -1,1 +1,16 @@
+name: update version code
 
+on:
+  workflow_dispatch:
+    inputs:
+      パラメーター名:
+        description: '説明'
+        required: true
+        default: 'デフォルト値'
+
+jobs:
+  update version code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: update gradle task
+        run: ./gradlew incrementVersionCode
